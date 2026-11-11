@@ -472,7 +472,7 @@ export const OXETHON_INFO: OxethonInfo = {
   ],
   regulationsSummary: [
     `As inscrições de equipes e projetos são feitas até ${REGISTRATION_DEADLINE.long} pelos formulários oficiais.`,
-    'Mais detalhes do regulamento do Hackathon serão divulgados pela coordenação.',
+    'Consulte o edital completo para conhecer os detalhes e critérios de avaliação.',
     'Menores de idade devem apresentar autorização dos responsáveis no credenciamento (07h00 às 08h00).',
   ],
   slogan: 'O Hackathon Arretado',
@@ -480,6 +480,8 @@ export const OXETHON_INFO: OxethonInfo = {
     `O Oxethôn é o hackathon do Ôxe Maker e acontece dentro da programação do evento, no dia ${EVENT_DATE.dayMonthLong}. Equipes multidisciplinares criam soluções tecnológicas que impactem positivamente a comunidade local e apresentam seus projetos no pitch final, no Auditório, às 16h. É o lugar onde o código encontra a realidade e a inovação acontece na prática.`,
   registrationUrl:
     'https://docs.google.com/forms/d/e/1FAIpQLSdgCwo3VhRmjO6UB6O9ausy0UPmK7ySRwicAcFpMEpYaWB0bQ/viewform?usp=dialog',
+  editalUrl:
+    'https://docs.google.com/document/d/1-Bkm_zg11pBaPFeQ4quA0dVrInRH9G1q/edit?usp=sharing&ouid=117368833859563106640&rtpof=true&sd=true',
   image: img('oxethon.webp'),
 };
 
@@ -501,7 +503,7 @@ const WORKSHOP_REGISTRATION_URLS: Record<string, string> = {
     'https://docs.google.com/forms/d/e/1FAIpQLSeafZrarPQAZh_1D548uZyStg7UkBAk9ENKG10za0nF9IuRZA/viewform?usp=dialog',
   'mundo-3d':
     'https://docs.google.com/forms/d/e/1FAIpQLSeGAyusyzXQzeUubB3Z_cKj8XpW1HD5g55Q_ldGWM9Wj63Qfw/viewform?usp=dialog',
-  'robos-manipuladores':
+  'semaforo-inteligente':
     'https://docs.google.com/forms/d/e/1FAIpQLSf60CKRQ0-hbYSWJIj63KX2XUruvhOB-yYdqfYLRvbzlqkm3A/viewform?usp=dialog',
   'recomposicao-aprendizagem-diagnosticos':
     'https://docs.google.com/forms/d/e/1FAIpQLSdxK9nsjKYDrUW1RnVGPXAUsftweEMY8mvfwVovinGV55AMfA/viewform?usp=dialog',
@@ -638,10 +640,10 @@ export const WORKSHOPS_DATA: Workshop[] = [
     software: 'Aplicativos do Meta Quest',
   },
   {
-    id: 'robos-manipuladores',
-    title: 'Robôs Manipuladores',
+    id: 'semaforo-inteligente',
+    title: 'Oficina Pedagógica: Semáforo Inteligente – Robótica e Cultura Maker',
     description:
-      'Controle de um robô manipulador de 3 graus de liberdade com garra, abordando noções básicas de Arduino, acionamento de servomotores e leitura de joystick analógico.',
+      'Construção de um semáforo de trânsito automatizado, utilizando LEDs, botões e buzzer, possibilitando aos estudantes vivenciar, na prática, conceitos básicos de eletrônica e programação. Durante a oficina, os participantes irão montar e programar seu próprio semáforo, simulando o funcionamento da sinalização de trânsito e a travessia segura de pedestres.',
     schedule: `${EVENT_DATE.dayMonthLong} · ${PROGRAM_TIMES.workshops.range}`,
     room: 'Salas de oficina · ETE José de Alencar',
     targetAudience: 'Estudantes e professores da rede estadual.',
@@ -651,9 +653,17 @@ export const WORKSHOPS_DATA: Workshop[] = [
       institution: 'DEMEC/UFPE',
       bio: 'Responsável pela oficina.',
     },
-    materialsProvided: ['4 kits de robôs manipuladores', '4 computadores para programação'],
-    equipment: ['Tomadas', 'Internet para instalar o Arduino'],
-    software: 'Arduino',
+    materialsProvided: [
+      'Arduinos',
+      'Protoboards',
+      'LEDs vermelhos, amarelos e verdes',
+      'Botões',
+      'Buzzers',
+      'Jumpers',
+      'Resistores',
+    ],
+    equipment: ['Computadores para programação', 'Projetor', 'Tomadas', 'Internet'],
+    software: 'Arduino IDE',
   },
   {
     id: 'recomposicao-aprendizagem-diagnosticos',

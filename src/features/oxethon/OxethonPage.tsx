@@ -102,18 +102,17 @@ export const OxethonPage: React.FC = () => {
               <Users className="w-4 h-4" />
               <span>Inscrever Equipe</span>
             </a>
-            <button
-              type="button"
-              onClick={() =>
-                document
-                  .getElementById('regulamento-oxethon')
-                  ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }
-              className="maker-btn-secondary px-5 py-2.5 text-xs uppercase flex items-center gap-2"
-            >
-              <FileText className="w-4 h-4" />
-              <span>Regulamento</span>
-            </button>
+            {OXETHON_INFO.editalUrl && (
+              <a
+                href={OXETHON_INFO.editalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="maker-btn-secondary px-5 py-2.5 text-xs uppercase flex items-center gap-2"
+              >
+                <FileText className="w-4 h-4" />
+                <span>Edital</span>
+              </a>
+            )}
           </div>
         </div>
         <div className="lg:col-span-5">

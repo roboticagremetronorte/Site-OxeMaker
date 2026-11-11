@@ -482,7 +482,7 @@ export const InscricoesPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 space-y-2">
               {OXETHON_INFO.registrationUrl && (
                 <a
                   href={OXETHON_INFO.registrationUrl}
@@ -491,6 +491,17 @@ export const InscricoesPage: React.FC = () => {
                   className="maker-btn-primary w-full py-3 px-5 text-xs uppercase flex items-center justify-center gap-2"
                 >
                   <span>Inscrever equipe</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              )}
+              {OXETHON_INFO.editalUrl && (
+                <a
+                  href={OXETHON_INFO.editalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="maker-btn-secondary w-full py-3 px-5 text-xs uppercase flex items-center justify-center gap-2"
+                >
+                  <span>Edital</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               )}

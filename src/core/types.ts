@@ -137,6 +137,7 @@ export interface OxethonInfo {
   slogan?: string;
   story?: string;
   registrationUrl?: string;
+  editalUrl?: string;
   image?: string;
 }
 

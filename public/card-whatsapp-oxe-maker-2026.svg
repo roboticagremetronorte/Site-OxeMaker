@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Novo site do Ôxe Maker 2026 no ar</title>
+  <desc id="desc">Card para WhatsApp anunciando a publicação do site oficial do Ôxe Maker 2026 e suas funcionalidades.</desc>
+
+  <defs>
+    <radialGradient id="glowYellow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCC140" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#FCC140" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M 54 0 L 0 0 0 54" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#071026"/>
+  <rect width="1080" height="1080" fill="url(#grid)"/>
+  <circle cx="990" cy="60" r="330" fill="url(#glowYellow)"/>
+  <circle cx="30" cy="1020" r="370" fill="url(#glowBlue)"/>
+
+  <rect x="0" y="0" width="1080" height="8" fill="#FCC140"/>
+
+  <!-- Marca -->
+  <rect x="72" y="62" width="64" height="64" rx="16" fill="#FCC140"/>
+  <text x="104" y="111" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#0B1330">Ô</text>
+  <text x="156" y="93" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1" fill="#FDFDFD">ÔXE MAKER</text>
+  <text x="157" y="122" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="7" fill="#FCC140">2026</text>
+
+  <rect x="798" y="70" width="210" height="52" rx="26" fill="#FCC140"/>
+  <text x="903" y="103" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" letter-spacing="1.5" fill="#0B1330">SITE OFICIAL</text>
+
+  <!-- Publicação do site -->
+  <text x="72" y="198" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="5" fill="#FCC140">PUBLICAÇÃO OFICIAL</text>
+  <text x="70" y="305" font-family="Arial, Helvetica, sans-serif" font-size="102" font-weight="900" letter-spacing="-3" fill="#FDFDFD">NOVO SITE</text>
+  <text x="70" y="420" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="900" letter-spacing="-3" fill="#FCC140">NO AR</text>
+  <text x="72" y="468" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="500" fill="#CBD5E1">Tudo sobre o Ôxe Maker 2026 em um só lugar.</text>
+
+  <!-- Janela do site -->
+  <rect x="72" y="510" width="936" height="120" rx="20" fill="#0F1B3D" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="102" cy="536" r="5" fill="#FCC140"/>
+  <circle cx="122" cy="536" r="5" fill="#0369A1"/>
+  <circle cx="142" cy="536" r="5" fill="#FFFFFF" fill-opacity="0.35"/>
+  <rect x="166" y="522" width="560" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="184" y="543" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#CBD5E1">netosants.github.io/Site-OxeMaker</text>
+  <rect x="744" y="522" width="240" height="32" rx="16" fill="#FCC140"/>
+  <text x="864" y="543" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" letter-spacing="0.8" fill="#0B1330">ACESSAR O SITE →</text>
+  <rect x="96" y="580" width="180" height="8" rx="4" fill="#FCC140"/>
+  <rect x="96" y="596" width="300" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.24"/>
+  <rect x="96" y="610" width="240" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+
+  <!-- Funcionalidades -->
+  <text x="72" y="682" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900" letter-spacing="4" fill="#FCC140">O QUE VOCÊ ENCONTRA NO SITE</text>
+
+  <rect x="72" y="706" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="96" cy="728" r="5" fill="#FCC140"/>
+  <text x="114" y="734" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Inscrições até 27/11</text>
+
+  <rect x="558" y="706" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="582" cy="728" r="5" fill="#FCC140"/>
+  <text x="600" y="734" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">13 oficinas maker</text>
+
+  <rect x="72" y="760" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="96" cy="782" r="5" fill="#FCC140"/>
+  <text x="114" y="788" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Torneios de robótica</text>
+
+  <rect x="558" y="760" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="582" cy="782" r="5" fill="#FCC140"/>
+  <text x="600" y="788" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Mostra de projetos</text>
+
+  <rect x="72" y="814" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="96" cy="836" r="5" fill="#FCC140"/>
+  <text x="114" y="842" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Cultura geek</text>
+
+  <rect x="558" y="814" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="582" cy="836" r="5" fill="#FCC140"/>
+  <text x="600" y="842" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Oxethôn + edital</text>
+
+  <rect x="72" y="868" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="96" cy="890" r="5" fill="#FCC140"/>
+  <text x="114" y="896" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Programação completa</text>
+
+  <rect x="558" y="868" width="450" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="582" cy="890" r="5" fill="#FCC140"/>
+  <text x="600" y="896" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FDFDFD">Mapa, notícias e FAQ</text>
+
+  <!-- Tema do evento -->
+  <rect x="72" y="934" width="936" height="52" rx="14" fill="#FCC140"/>
+  <text x="94" y="966" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" letter-spacing="1.5" fill="#0B1330">TEMA 2026</text>
+  <text x="204" y="966" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#0B1330">Educação para a Cidadania Digital e Midiática</text>
+
+  <!-- Rodapé -->
+  <line x1="72" y1="1016" x2="1008" y2="1016" stroke="#FFFFFF" stroke-opacity="0.16"/>
+  <text x="72" y="1052" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#94A3B8">01 DEZ 2026 · ETE JOSÉ DE ALENCAR · PAULISTA-PE</text>
+  <text x="1008" y="1052" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#FCC140">ACESSE E COMPARTILHE</text>
+</svg>
