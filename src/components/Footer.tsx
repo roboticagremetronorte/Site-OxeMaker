@@ -6,6 +6,19 @@ import { img } from '../core/images';
 import { MapPin, Mail, Phone, ExternalLink, Heart, ShieldCheck, Calendar } from 'lucide-react';
 
 export const Footer: React.FC = () => {
+  const commitSha = (import.meta.env.VITE_COMMIT_SHA as string | undefined) ?? 'local';
+  const shortCommit = commitSha.slice(0, 7);
+  const buildTime = import.meta.env.VITE_BUILD_TIME as string | undefined;
+  const buildDate = buildTime ? new Date(buildTime) : null;
+  const formattedBuildTime =
+    buildDate && !Number.isNaN(buildDate.getTime())
+      ? new Intl.DateTimeFormat('pt-BR', {
+          dateStyle: 'short',
+          timeStyle: 'short',
+          timeZone: 'America/Recife',
+        }).format(buildDate)
+      : null;
+
   return (
     <footer className="bg-[#DFE6F3] text-slate-300 border-t-2 border-[#01B1FD]/20 pt-14 pb-8 relative overflow-hidden">
       {/* Decorative top accent line */}
@@ -153,9 +166,18 @@ export const Footer: React.FC = () => {
 
         {/* Bottom unified bar: créditos + parceiros */}
         <div className="pt-6 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs font-mono-code text-slate-500">
-          <p>
-            © 2021–2026 {EVENT_INFO.name}. Todos os direitos reservados.
-          </p>
+          <div className="text-center lg:text-left">
+            <p>
+              © 2021–2026 {EVENT_INFO.name}. Todos os direitos reservados.
+            </p>
+            <p
+              className="mt-1 text-[10px] text-slate-500"
+              title={commitSha === 'local' ? 'Build local' : `Commit ${commitSha}`}
+            >
+              Versão {shortCommit}
+              {formattedBuildTime ? ` · ${formattedBuildTime}` : ''}
+            </p>
+          </div>
           {/* Logos brancos ("claras") sobre plaque escuro para manter visibilidade no footer claro */}
           <div className="bg-[#0B1330] px-4 py-2.5 rounded-sm border border-[#01B1FD]/25">
             <img
