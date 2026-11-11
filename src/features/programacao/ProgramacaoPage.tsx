@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { EVENT_INFO, SCHEDULE_DATA } from '../../core/constants';
+import { EVENT_INFO, SCHEDULE_DATA, SCHEDULE_PDF_URL } from '../../core/constants';
 import { EVENT_DATE, EVENT_TIME } from '../../core/eventMeta';
 import { ScheduleItem } from '../../core/types';
 import {
@@ -9,6 +9,7 @@ import {
   Search,
   Filter,
   Download,
+  FileText,
   Bot,
   Wrench,
   Sparkles,
@@ -131,6 +132,14 @@ export const ProgramacaoPage: React.FC = () => {
         </p>
 
         <div className="pt-2 flex flex-wrap items-center gap-3">
+          <a
+            href={SCHEDULE_PDF_URL}
+            download="cronograma-oxe-maker-2026.pdf"
+            className="maker-btn-primary px-4 py-2 text-xs uppercase flex items-center gap-1.5"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span>Baixar Cronograma (.PDF)</span>
+          </a>
           <button
             onClick={handleExportSchedule}
             className="maker-btn-secondary px-4 py-2 text-xs uppercase flex items-center gap-1.5"
