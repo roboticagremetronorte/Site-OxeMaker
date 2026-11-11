@@ -207,7 +207,8 @@ export const HIGHLIGHTS_DATA: FeatureHighlight[] = [
  * PROGRAMAÇÃO OFICIAL (DIA ÚNICO)
  * ============================================================================
  */
-export const SCHEDULE_PDF_URL = '/downloads/cronograma-oxe-maker-2026.pdf';
+export const SCHEDULE_PDF_URL =
+  'https://drive.google.com/uc?export=download&id=183AFelXpnQMs_qDbUWvv_gpm-ThhyUlO';
 
 export const SCHEDULE_DATA: ScheduleItem[] = [
   {
