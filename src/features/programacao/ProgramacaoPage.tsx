@@ -8,7 +8,6 @@ import {
   MapPin,
   Search,
   Filter,
-  Download,
   FileText,
   Bot,
   Wrench,
@@ -52,22 +51,6 @@ export const ProgramacaoPage: React.FC = () => {
       return matchCategory && matchSearch;
     });
   }, [selectedCategory, searchQuery]);
-
-  const handleExportSchedule = () => {
-    let content = `PROGRAMAÇÃO OFICIAL - ÔXE MAKER 2026\nData: ${EVENT_INFO.dates.display} | ${EVENT_INFO.location.venue}, ${EVENT_INFO.location.city}-${EVENT_INFO.location.state}\n\n`;
-
-    SCHEDULE_DATA.forEach((item) => {
-      content += `${item.time} - ${item.title}\nLocal: ${item.location}\nCategoria: ${item.category.toUpperCase()}\nDetalhes: ${item.description}\n----------------------------------------\n`;
-    });
-
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `Programacao-OxeMaker-2026.txt`;
-    link.click();
-    URL.revokeObjectURL(url);
-  };
 
   const getPeriod = (time: string): 'manha' | 'tarde' => {
     const hour = parseInt(time, 10);
@@ -141,13 +124,7 @@ export const ProgramacaoPage: React.FC = () => {
             <FileText className="w-3.5 h-3.5" />
             <span>Baixar Cronograma (.PDF)</span>
           </a>
-          <button
-            onClick={handleExportSchedule}
-            className="maker-btn-secondary px-4 py-2 text-xs uppercase flex items-center gap-1.5"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>Baixar Programação (.TXT)</span>
-          </button>
+
           <span className="text-xs font-mono-code text-slate-400">
             ✓ Horário de Brasília (GMT-3) · Sujeito a pequenos ajustes no local
           </span>
