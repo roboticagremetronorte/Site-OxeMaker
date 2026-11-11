@@ -9,8 +9,6 @@ import {
   CheckCircle2,
   AlertCircle,
   FileText,
-  Smile,
-  Flame,
 } from 'lucide-react';
 
 export const GeekPage: React.FC = () => {
@@ -40,35 +38,6 @@ export const GeekPage: React.FC = () => {
           A robótica ganha vida quando se conecta com a paixão dos estudantes por animes, games,
           ficção científica e dança. Conheça as 2 modalidades do Polo Geek do Ôxe Maker 2026!
         </p>
-      </div>
-
-      {/* Geek Banner Highlight */}
-      <div className="p-6 bg-gradient-to-r from-[#F9FDFE] to-[#0030B5]/15 border-2 border-[#01B1FD] rounded-sm maker-shadow-cyan flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="space-y-2">
-          <div className="flex items-center gap-2 text-xs font-mono-code text-[#8A5A04] uppercase font-bold">
-            <Flame className="w-4 h-4 text-[#8A5A04]" />
-            <span>Espaço Totalmente Climatizado para Camarim</span>
-          </div>
-          <h2 className="text-xl sm:text-2xl font-heading text-[#0B1330]">
-            Apresentações ao Vivo, Torcida Apaixonada & Premiações
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-300 font-sans max-w-xl">
-            Inscrições abertas para estudantes da rede pública e comunidade. Traga seu
-            cosplay feito com materiais makers ou monte seu grupo cover de K-pop!
-          </p>
-        </div>
-
-        <div className="flex-shrink-0">
-          <a
-            href={GEEK_CATEGORIES[0].registrationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="maker-btn-primary px-6 py-3 text-xs uppercase flex items-center gap-2"
-          >
-            <Crown className="w-4 h-4" />
-            <span>Inscrever Meu Cosplay</span>
-          </a>
-        </div>
       </div>
 
       {/* 2 Categories Grid */}
