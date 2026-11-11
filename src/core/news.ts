@@ -43,6 +43,17 @@ export const NEWS_DATA: NewsItem[] = [
     url: 'https://portal.educacao.pe.gov.br/gre-metro-norte-promoveu-o-evento-oxe-maker/',
     type: 'reportagem',
   },
+  {
+    id: 'jc-uol-2024',
+    date: '2024-10-17',
+    outlet: 'Jornal do Commercio (JC/UOL)',
+    title:
+      "Evento 'Oxe Maker' de robótica reúne mais de 600 participantes da rede estadual de Pernambuco",
+    summary:
+      'Matéria sobre a edição de 2024, com cerca de 600 participantes de mais de 70 escolas, palestras, oficinas práticas, cosplay, K-pop e batalhas de robôs em Paulista.',
+    url: 'https://jc.uol.com.br/colunas/enem-e-educacao/2024/10/17/evento-oxe-maker-de-robotica-reune-mais-de-600-participantes-da-rede-estadual-de-pernambuco.html',
+    type: 'reportagem',
+  },
 ];
 
 /**
