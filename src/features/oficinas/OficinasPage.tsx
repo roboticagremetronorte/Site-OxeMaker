@@ -9,7 +9,7 @@ export const OficinasPage: React.FC = () => {
       <div className="space-y-3 text-center sm:text-left border-b border-slate-800 pb-8">
         <div className="inline-flex items-center gap-2 text-xs font-mono-code text-[#0369A1] uppercase font-bold tracking-wider">
           <Wrench className="w-4 h-4 text-[#8A5A04]" />
-          <span>Oficinas 2026 · Inscrições abertas</span>
+          <span>Oficinas 2026 · Inscrições por oficina</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-heading font-black text-[#0B1330] uppercase tracking-tight">
           Oficinas 2026
@@ -109,7 +109,9 @@ export const OficinasPage: React.FC = () => {
 
             <p className="flex items-center gap-1.5 text-[10px] font-mono-code text-slate-400">
               <BookOpen className="w-3.5 h-3.5 text-[#0369A1] flex-shrink-0" />
-              Inscrições abertas para esta oficina.
+              {ws.registrationUrl
+                ? 'Inscrições abertas para esta oficina.'
+                : 'Inscrições em breve para esta oficina.'}
             </p>
           </article>
         ))}

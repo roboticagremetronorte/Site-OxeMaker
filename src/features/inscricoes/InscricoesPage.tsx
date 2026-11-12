@@ -7,7 +7,7 @@ import {
   TOURNAMENTS_DATA,
   WORKSHOPS_DATA,
 } from '../../core/constants';
-import { EVENT_DATE, PROGRAM_TIMES, REGISTRATION_DEADLINE } from '../../core/eventMeta';
+import { EVENT_DATE, PROGRAM_TIMES, EVENT_DAY_REGISTRATION_DEADLINE } from '../../core/eventMeta';
 import {
   ArrowRight,
   Bot,
@@ -35,13 +35,13 @@ const TOPICS = [
   {
     id: 'geek',
     title: 'Cultura Geek',
-    description: 'Cosplay e K-Pop Dance Cover',
+    description: 'Cosplay e K-Pop Dance',
     icon: Sparkles,
   },
   {
     id: 'oficinas',
     title: 'Oficinas Maker',
-    description: 'Propostas enviadas pelas escolas',
+    description: `Oficinas da rede estadual e instituições parceiras`,
     icon: Wrench,
   },
   {
@@ -282,7 +282,7 @@ export const InscricoesPage: React.FC = () => {
           icon={<Sparkles className="w-6 h-6 text-[#0369A1]" />}
           eyebrow="Cultura Geek"
           title="Cultura Geek"
-          description="Mostre seu talento no Cosplay ou no K-Pop Dance Cover e faça parte da programação geek no Auditório."
+          description={`Mostre seu talento no Cosplay ou na Competição de K-Pop Dance e faça parte da programação geek no Auditório. Inscrições até ${EVENT_DAY_REGISTRATION_DEADLINE.shortWithYear}, às 13h.`}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -357,7 +357,7 @@ export const InscricoesPage: React.FC = () => {
               Escolha sua oficina
             </h3>
             <p className="text-sm text-slate-400 font-sans leading-relaxed">
-              As inscrições nas oficinas estão abertas até {REGISTRATION_DEADLINE.shortWithYear}. Confira
+              As inscrições nas oficinas estão abertas até {EVENT_DAY_REGISTRATION_DEADLINE.shortWithYear}, às 13h. Confira
               os temas, as escolas responsáveis e os detalhes de cada oficina na página de Oficinas.
             </p>
           </div>

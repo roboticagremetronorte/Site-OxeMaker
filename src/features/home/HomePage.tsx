@@ -45,14 +45,14 @@ export const HomePage: React.FC = () => {
     {
       id: 'geek',
       title: 'Cultura Geek',
-      description: 'Participe do concurso Cosplay ou da mostra e torneio de K-Pop Dance Cover.',
+      description: 'Participe do concurso Cosplay ou da Competição de K-Pop Dance.',
       href: '/inscricoes#geek',
       icon: <Sparkles className="w-5 h-5 text-[#0369A1]" />,
     },
     {
       id: 'oficinas',
       title: 'Oficinas Maker',
-      description: `Conheça as ${WORKSHOPS_DATA.length} propostas de oficinas enviadas pelas escolas da rede estadual.`,
+      description: `Conheça as ${WORKSHOPS_DATA.length} oficinas da rede estadual e de instituições parceiras.`,
       href: '/inscricoes#oficinas',
       icon: <Wrench className="w-5 h-5 text-[#8A5A04]" />,
     },

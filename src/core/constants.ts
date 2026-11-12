@@ -18,7 +18,10 @@ import {
   EVENT_TIME,
   PROGRAM_TIMES,
   REGISTRATION_DEADLINE,
+  EVENT_DAY_REGISTRATION_DEADLINE,
 } from './eventMeta';
+
+const publicAsset = (path: string): string => `${import.meta.env.BASE_URL}${path}`;
 
 /**
  * ============================================================================
@@ -410,48 +413,59 @@ export const GEEK_CATEGORIES: GeekCategory[] = [
   {
     id: 'cosplay',
     name: 'Concurso Cosplay Ôxe Maker',
-    subtitle: 'Criatividade, Caracterização & Performance',
-    description: 'Celebração da cultura pop onde os estudantes se transformam em personagens de animes, mangás, games, HQs e universos geek.',
+    subtitle: 'Desfile Individual · Criatividade & Performance',
+    description:
+      'Desfile individual de estudantes da rede estadual que dão vida a personagens de videogames, animes, mangás, filmes e séries. A banca avalia o acabamento da fantasia, a fidelidade ao design, a criatividade e a presença de palco.',
     criteria: [
-      'Fidelidade e Acabamento da Fantasia (40%)',
-      'Criatividade no uso de materiais makers e recicláveis (20%)',
-      'Interpretação e Presença de Palco (30%)',
-      'Empatia e Respeito às Normas do Evento (10%)',
+      'Acabamento e riqueza de detalhes — qualidade técnica da confecção',
+      'Similaridade — fidelidade ao design do personagem',
+      'Criatividade — soluções e materiais aplicados na execução',
+      'Desenvoltura e postura — performance e linguagem corporal no palco',
     ],
     rulesHighlight: [
-      'Inscrições limitadas a 40 participantes',
-      'Armas cenográficas de metal cortante ou fogo são terminantemente proibidas',
-      'Apresentações individuais (até 1min30s) e duplas (até 2min30s)',
-      'Camarim climatizado para preparação dos participantes no local',
+      'Desfile individual de até 30 segundos: caminhe até o "X" no centro do palco e apresente o figurino de frente, de lado e de costas',
+      'Inscrições gratuitas para estudantes de qualquer idade da rede estadual da GRE Metropolitana Norte; menores de 18 anos precisam de autorização do responsável',
+      `Pré-inscrição online até ${EVENT_DAY_REGISTRATION_DEADLINE.long}, às 13h; confirmação presencial e inspeção de acessórios em 01/12, das 09h às 13h`,
+      'Figurinos adequados ao ambiente escolar, sem roupas excessivamente curtas ou transparentes',
+      'Réplicas de armas apenas em papelão, EVA, espuma, plástico ou madeira balsa, sem pontas afiadas ou disparos',
+      'Versões alternativas e designs originais (fanart, genderbend) são permitidos, desde que o personagem seja reconhecível',
     ],
-    scheduleTime: `${EVENT_DATE.weekdayShort}, ${EVENT_DATE.dayMonthLong} · Cultura Geek (${PROGRAM_TIMES.competitions.label}) · Auditório`,
+    scheduleTime: `${EVENT_DATE.weekdayShort}, ${EVENT_DATE.dayMonthLong} · Desfile 13h30–14h30 · Premiação 16h30 · Auditório`,
     stage: 'Auditório · ETE José de Alencar · Paulista-PE',
     registrationUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSd4R3JcsSD_8gPA9DwBJ3HMes4C9Z5YwhQk57AadqcZn6wGug/viewform',
-    rulesPdfUrl: 'https://docs.google.com/document/d/1JSj1mhJ9lFLgzRjuAn0TOssGCi1vxQWWEfx3_X4xXjQ/edit?usp=drivesdk',
-    prizes: 'Troféu Calango Dourado para o 1º lugar e troféus para o 2º e 3º lugares.',
+    rulesPdfUrl: publicAsset('editais/edital-cosplay-oxe-maker-2026.pdf'),
+    prizes:
+      'Troféus para o 1º, 2º, 3º, 4º e 5º lugares no Desfile Individual (Ensino Fundamental e Ensino Médio).',
     image: img('calango-cosplay.webp'),
   },
   {
     id: 'kpop',
-    name: 'Mostra & Torneio K-Pop Dance Cover',
-    subtitle: 'Sincronia, Energia & Expressão Corporal',
-    description: 'O Auditório ferve com coreografias das principais bandas e solistas da música pop coreana, revelando o talento rítmico dos jovens da rede pública.',
+    name: 'Competição de K-Pop Dance',
+    subtitle: 'Solo & Grupo · Sincronia, Ritmo e Presença de Palco',
+    description:
+      'Competição de K-Pop Dance com apresentações solo e em grupo, valorizando coreografia, ritmo, expressividade e criatividade. Estudantes da rede estadual mostram seu talento no palco do Auditório.',
     criteria: [
-      'Precisão da Coreografia e Sincronia (40%)',
-      'Expressão Facial e Carisma Cênico (30%)',
-      'Figurino e Caracterização do Grupo (20%)',
-      'Harmonia de Grupo / Ocupação de Espaço (10%)',
+      'Fidelidade e execução da coreografia',
+      'Sincronia e harmonia (integração do grupo ou domínio do solo)',
+      'Ritmo e coordenação espacial',
+      'Expressividade e presença de palco',
+      'Figurino, criatividade e elementos maker',
+      'Ética, respeito e postura',
     ],
     rulesHighlight: [
-      'Modalidades: Solo e Grupos (de 2 a 9 integrantes)',
-      'Tempo máximo de música: 4 minutos em áudio enviado previamente em alta qualidade (MP3)',
-      `Ensaios e reconhecimento de palco combinados com a coordenação no dia ${EVENT_DATE.short}`,
+      'Estudantes a partir de 10 anos, matriculados na rede estadual de Pernambuco (GRE Metropolitana Norte)',
+      'Modalidades Solo e Grupo, de 2 a 10 integrantes — incluindo os backdancers',
+      'Duração máxima de 3 minutos, com áudio em MP3 anexado ao formulário de inscrição',
+      'Cada estudante participa de apenas uma apresentação, seja solo, em grupo ou como backdancer',
+      'Seis critérios de 0 a 10 pontos, totalizando no máximo 60 pontos por apresentação',
+      'Proibidos fogo, objetos cortantes, confetes, glitter solto e músicas com vozes clonadas por IA ou que violem direitos autorais',
+      `Inscrições gratuitas até ${EVENT_DAY_REGISTRATION_DEADLINE.long}, às 13h`,
     ],
-    scheduleTime: `${EVENT_DATE.weekdayShort}, ${EVENT_DATE.dayMonthLong} · Cultura Geek (${PROGRAM_TIMES.competitions.label}) · Auditório`,
+    scheduleTime: `${EVENT_DATE.weekdayShort}, ${EVENT_DATE.dayMonthLong} · Competição a partir das 13h · Auditório`,
     stage: 'Auditório · ETE José de Alencar · Paulista-PE',
     registrationUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSftjJcV2ciOO2Jt0uWN0yAHIclFtr2uDcjy8teEm8q85WaJpA/viewform',
-    rulesPdfUrl: 'https://docs.google.com/document/d/1d6mWJLKoLgf8ZDlmRN20hzaPcGI9Z9x8uqQV5iptbZc/edit?usp=drivesdk',
-    prizes: 'Troféus do 1º ao 5º lugar no K-Pop Dance Cover.',
+    rulesPdfUrl: publicAsset('editais/regulamento-kpop-oxe-maker-2026.pdf'),
+    prizes: 'Premiação definida pela comissão organizadora do Ôxe Maker 2026.',
     image: img('k-pop.webp'),
   },
 ];
@@ -805,6 +819,26 @@ export const WORKSHOPS_DATA: Workshop[] = [
       'Para mais de 2 grupos, a organização precisa disponibilizar peças LEGO NXT adicionais.',
     software: 'LEGO NXT',
   },
+  {
+    id: 'monte-seu-portfolio-do-zero',
+    title: 'Monte seu Portfólio do Zero',
+    description:
+      'Você já fez algum projeto, trabalho, desenho, experimento, curso ou atividade que gostaria de mostrar para outras pessoas? Nesta atividade, vamos mostrar como transformar essas experiências em um portfólio, mesmo que você ainda esteja começando na área de tecnologia. De forma prática, os participantes aprenderão a organizar suas habilidades, interesses e projetos, além de descobrir como apresentar o que já sabem fazer de uma maneira clara e atrativa. A proposta é ajudar cada participante a reconhecer suas próprias experiências e começar a construir um portfólio que possa crescer junto com sua trajetória.',
+    schedule: `${EVENT_DATE.dayMonthLong} · ${PROGRAM_TIMES.workshops.range}`,
+    room: 'Salas de oficina · ETE José de Alencar',
+    targetAudience:
+      'Estudantes da rede estadual interessados em tecnologia e em construir um portfólio.',
+    school: 'SEAL · CIn/UFPE',
+    instructor: {
+      name: 'Equipe SEAL',
+      role: 'Oficineiros',
+      institution: 'Centro de Informática da UFPE (CIn/UFPE)',
+      bio: 'Liga Acadêmica de Engenharia de Software formada por estudantes de graduação do CIn/UFPE, com experiência em monitorias, minicursos e atividades de divulgação de tecnologia.',
+    },
+    materialsProvided: ['Computadores com acesso à internet'],
+    equipment: ['Projetor ou tela para apresentação', 'Computador para conexão ao projetor/tela'],
+    software: 'VS Code e navegador de internet',
+  },
 ].map((workshop) => ({
   ...workshop,
   registrationUrl: WORKSHOP_REGISTRATION_URLS[workshop.id],
@@ -857,7 +891,7 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
     title: 'O Presente: Cidadania Digital & Futuro',
     description:
       `A 6ª edição acontece em um único dia, ${EVENT_DATE.dayMonthLong}, na ETE José de Alencar em Paulista, com oficinas, mostra de projetos, competições, cultura geek e o pitch do Hackathon.`,
-    stats: '13 oficinas · 6 competições · 260 vagas em oficinas',
+    stats: '14 oficinas · 6 competições · mais de 260 vagas em oficinas',
   },
 ];
 
@@ -975,7 +1009,7 @@ export const FAQ_DATA = [
   {
     question: 'Até quando posso me inscrever?',
     answer:
-      `As inscrições vão até ${REGISTRATION_DEADLINE.long} e abrangem Torneios (Buzz Line, Buzz PRO e Sumô de Robôs), Cultura Geek (Cosplay e K-pop), Oficinas Maker, Mostra de Projetos, Oxethôn e Visitantes.`,
+      `As inscrições para Torneios (Buzz Line, Buzz PRO e Sumô de Robôs), Mostra de Projetos e Oxethôn vão até ${REGISTRATION_DEADLINE.long}. Já Cosplay, K-pop e Oficinas Maker recebem inscrições até ${EVENT_DAY_REGISTRATION_DEADLINE.long}, às 13h.`,
   },
   {
     question: 'Quais são as modalidades de inscrição?',
@@ -990,7 +1024,7 @@ export const FAQ_DATA = [
   {
     question: 'Como faço para participar das competições?',
     answer:
-      `Acesse a página de Inscrições e escolha entre Torneios (Buzz Line, Buzz PRO e Sumô de Robôs), Cultura Geek (Cosplay e K-POP), Oficinas Maker e Oxethôn. Confirme as regras da categoria desejada e faça sua inscrição até ${REGISTRATION_DEADLINE.shortWithYear}. As competições acontecem no dia ${EVENT_DATE.short}, das ${PROGRAM_TIMES.competitions.range}.`,
+      `Acesse a página de Inscrições e escolha entre Torneios (Buzz Line, Buzz PRO e Sumô de Robôs), Cultura Geek (Cosplay e K-POP), Oficinas Maker e Oxethôn. Confirme as regras da categoria desejada: torneios, Mostra e Oxethôn têm inscrições até ${REGISTRATION_DEADLINE.shortWithYear}; Cosplay, K-pop e oficinas até ${EVENT_DAY_REGISTRATION_DEADLINE.shortWithYear}, às 13h. As competições acontecem no dia ${EVENT_DATE.short}, das ${PROGRAM_TIMES.competitions.range}.`,
   },
   {
     question: 'Qual é a programação do dia do evento?',

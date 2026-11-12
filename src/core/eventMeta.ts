@@ -2,6 +2,8 @@ const EVENT_TIME_ZONE = 'America/Recife';
 
 export const EVENT_START_ISO = '2026-12-01T07:00:00-03:00';
 export const REGISTRATION_DEADLINE_ISO = '2026-11-27T23:59:59-03:00';
+// Cosplay, K-pop e oficinas recebem inscrições até o dia do evento, às 13h.
+export const EVENT_DAY_REGISTRATION_DEADLINE_ISO = '2026-12-01T13:00:00-03:00';
 
 export interface DateLabels {
   iso: string;
@@ -94,6 +96,9 @@ const createTimeRange = (start: string, end: string): TimeRange => {
 
 export const EVENT_DATE = createDateLabels(EVENT_START_ISO);
 export const REGISTRATION_DEADLINE = createDateLabels(REGISTRATION_DEADLINE_ISO);
+export const EVENT_DAY_REGISTRATION_DEADLINE = createDateLabels(
+  EVENT_DAY_REGISTRATION_DEADLINE_ISO,
+);
 
 const eventHours = createTimeRange('07:00', '17:30');
 

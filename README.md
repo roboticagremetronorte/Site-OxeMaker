@@ -91,7 +91,7 @@ O código foi organizado em camadas modulares para facilitar manutenções futur
     │   │   ├── torneio/            # 3 categorias de robótica (Buzz Line, Buzz Pro, Sumô) e editais
     │   │   ├── geek/               # Cosplay e K-pop Dance Cover
     │   │   ├── oxethon/            # Hackathon, história e regulamento
-    │   │   ├── oficinas/           # 13 propostas de oficinas enviadas pelas escolas
+    │   │   ├── oficinas/           # 14 oficinas da rede estadual e instituições parceiras
     │   │   ├── inscricoes/         # Central de inscrições por tópico
     │   │   └── sobre/              # História desde 2021, linha do tempo e Homenagem à Fundadora
     │   ├── index.css               # Tema escuro maker, sombras offset e tipografia justificada
