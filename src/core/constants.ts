@@ -534,6 +534,8 @@ const WORKSHOP_REGISTRATION_URLS: Record<string, string> = {
     'https://docs.google.com/forms/d/e/1FAIpQLSeMpJwT39gzsGS2cOZHhfPGQAGKcK0thCShPWkLUevgs2IDIA/viewform?usp=dialog',
   'sumo-lego-nxt-meninas-ciencias':
     'https://docs.google.com/forms/d/e/1FAIpQLSeewNYF_kpgB7n-x0pfMyjcV6sDPq3nyBnWyZ50KDzLzBOR1A/viewform?usp=dialog',
+  'monte-seu-portfolio-do-zero':
+    'https://docs.google.com/forms/d/e/1FAIpQLScRID5Yrm8bHDGv5UsjV4X4CX_WaaCYCfvDKvH3ILBymYWEzQ/viewform?usp=dialog',
 };
 
 export const WORKSHOPS_DATA: Workshop[] = [
