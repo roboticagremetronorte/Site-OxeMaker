@@ -245,10 +245,12 @@ export const SCHEDULE_DATA: ScheduleItem[] = [
     id: 'd1-4',
     day: 'day1',
     time: '09h00 - 09h40',
-    title: 'TED Talk',
-    description: 'Palestra breve sobre tecnologia, educação e protagonismo juvenil.',
+    title: 'TED Talk: Construindo Caminhos',
+    description:
+      'Com Messias Daniel: minha jornada entre tecnologia, educação e impacto social.',
     category: 'palestras',
     location: 'Auditório',
+    speakerOrHost: 'Messias Daniel',
   },
   {
     id: 'd1-5',
@@ -1031,6 +1033,6 @@ export const FAQ_DATA = [
   {
     question: 'Qual é a programação do dia do evento?',
     answer:
-      'Das 07h00 às 08h00 credenciamento na frente da ETE; 08h15 apresentação cultural no Auditório; 08h30 abertura oficial; 09h00 TED Talk; 09h40 lanche na Cantina; 10h00 às 12h00 oficinas nas salas e Mostra de Projetos no Pátio; 12h00 almoço na Cantina; 13h30 competições de robótica na Quadra e cultura geek no Auditório; 15h30 lanche; 16h00 pitch do Hackathon no Auditório; 17h00 premiação no Auditório. A grade completa está na aba Programação.',
+      'Das 07h00 às 08h00 credenciamento na frente da ETE; 08h15 apresentação cultural no Auditório; 08h30 abertura oficial; 09h00 TED Talk com Messias Daniel; 09h40 lanche na Cantina; 10h00 às 12h00 oficinas nas salas e Mostra de Projetos no Pátio; 12h00 almoço na Cantina; 13h30 competições de robótica na Quadra e cultura geek no Auditório; 15h30 lanche; 16h00 pitch do Hackathon no Auditório; 17h00 premiação no Auditório. A grade completa está na aba Programação.',
   },
 ];

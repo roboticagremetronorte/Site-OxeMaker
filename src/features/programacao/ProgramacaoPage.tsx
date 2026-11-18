@@ -110,7 +110,7 @@ export const ProgramacaoPage: React.FC = () => {
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-3xl font-sans">
           Acompanhe todos os horários do dia: credenciamento, apresentação cultural, abertura oficial,
-          TED Talk, oficinas, Mostra de Projetos, competições, cultura geek, pitch do Hackathon e
+          TED Talk de Messias Daniel, oficinas, Mostra de Projetos, competições, cultura geek, pitch do Hackathon e
           premiação na ETE José de Alencar, em {EVENT_INFO.location.city}.
         </p>
 

@@ -31,9 +31,9 @@ export const MapaPage: React.FC = () => {
       name: 'Auditório · Programação Principal',
       subtitle: 'Cultura, Talks, Geek & Premiação',
       description:
-        'No Auditório acontecem a apresentação cultural com a Banda da EREM Padre Osmar Novaes (08h15), a abertura oficial (08h30), o TED Talk (09h00), o cosplay e a cultura geek (13h30), o pitch do Hackathon (16h00) e a premiação (17h00).',
+        'No Auditório acontecem a apresentação cultural com a Banda da EREM Padre Osmar Novaes (08h15), a abertura oficial (08h30), o TED Talk de Messias Daniel (09h00), o cosplay e a cultura geek (13h30), o pitch do Hackathon (16h00) e a premiação (17h00).',
       color: '#01B1FD',
-      highlights: ['Banda · 08h15', 'Abertura & TED Talk · 08h30', 'Cosplay & Geek · 13h30', 'Pitch · 16h00', 'Premiação · 17h00'],
+      highlights: ['Banda · 08h15', 'Abertura · 08h30', 'TED Talk · 09h00', 'Cosplay & Geek · 13h30', 'Pitch · 16h00', 'Premiação · 17h00'],
     },
     {
       id: 'quadra',
