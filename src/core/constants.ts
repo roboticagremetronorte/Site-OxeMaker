@@ -539,8 +539,8 @@ const WORKSHOP_REGISTRATION_URLS: Record<string, string> = {
     'https://docs.google.com/forms/d/e/1FAIpQLSeMpJwT39gzsGS2cOZHhfPGQAGKcK0thCShPWkLUevgs2IDIA/viewform?usp=dialog',
   'sumo-lego-nxt-meninas-ciencias':
     'https://docs.google.com/forms/d/e/1FAIpQLSeewNYF_kpgB7n-x0pfMyjcV6sDPq3nyBnWyZ50KDzLzBOR1A/viewform?usp=dialog',
-  'monte-seu-portfolio-do-zero':
-    'https://docs.google.com/forms/d/e/1FAIpQLScRID5Yrm8bHDGv5UsjV4X4CX_WaaCYCfvDKvH3ILBymYWEzQ/viewform?usp=dialog',
+  'protecao-de-dados-em-jogos':
+    'https://docs.google.com/forms/d/e/1FAIpQLSf_UyV-yDT1NqW19MS7kIkWcok4bRgDTt7Lrb4r39iVlgwk8g/viewform?usp=dialog',
 };
 
 export const WORKSHOPS_DATA: Workshop[] = [
@@ -827,24 +827,24 @@ export const WORKSHOPS_DATA: Workshop[] = [
     software: 'LEGO NXT',
   },
   {
-    id: 'monte-seu-portfolio-do-zero',
-    title: 'Monte seu Portfólio do Zero',
+    id: 'protecao-de-dados-em-jogos',
+    title: 'Proteção de dados em jogos: Até onde você iria por cliques?',
     description:
-      'Você já fez algum projeto, trabalho, desenho, experimento, curso ou atividade que gostaria de mostrar para outras pessoas? Nesta atividade, vamos mostrar como transformar essas experiências em um portfólio, mesmo que você ainda esteja começando na área de tecnologia. De forma prática, os participantes aprenderão a organizar suas habilidades, interesses e projetos, além de descobrir como apresentar o que já sabem fazer de uma maneira clara e atrativa. A proposta é ajudar cada participante a reconhecer suas próprias experiências e começar a construir um portfólio que possa crescer junto com sua trajetória.',
+      'Oficina em formato de jogo sobre privacidade digital: a cada clique, os participantes descobrem quem coleta seus dados, como eles são usados e como se proteger.',
     schedule: `${EVENT_DATE.dayMonthLong} · ${PROGRAM_TIMES.workshops.range}`,
     room: 'Salas de oficina · ETE José de Alencar',
     targetAudience:
-      'Estudantes da rede estadual interessados em tecnologia e em construir um portfólio.',
-    school: 'SEAL · CIn/UFPE',
+      'Estudantes da rede estadual interessados em jogos, tecnologia e privacidade digital.',
+    school: 'Projeto Ponte Saber · UNINASSAU Patteo Olinda',
     instructor: {
-      name: 'Equipe SEAL',
+      name: 'Equipe do Projeto Ponte Saber',
       role: 'Oficineiros',
-      institution: 'Centro de Informática da UFPE (CIn/UFPE)',
-      bio: 'Liga Acadêmica de Engenharia de Software formada por estudantes de graduação do CIn/UFPE, com experiência em monitorias, minicursos e atividades de divulgação de tecnologia.',
+      institution: 'UNINASSAU Patteo Olinda',
+      bio: 'Equipe do projeto Ponte Saber, do UNINASSAU Patteo Olinda, responsável pela oficina.',
     },
     materialsProvided: ['Computadores com acesso à internet'],
-    equipment: ['Projetor ou tela para apresentação', 'Computador para conexão ao projetor/tela'],
-    software: 'VS Code e navegador de internet',
+    equipment: ['Projetor ou tela para apresentação'],
+    software: 'Navegador de internet',
   },
 ].map((workshop) => ({
   ...workshop,
