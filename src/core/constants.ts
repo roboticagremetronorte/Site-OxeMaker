@@ -835,12 +835,12 @@ export const WORKSHOPS_DATA: Workshop[] = [
     room: 'Salas de oficina · ETE José de Alencar',
     targetAudience:
       'Estudantes da rede estadual interessados em jogos, tecnologia e privacidade digital.',
-    school: 'Projeto Ponte Saber · UNINASSAU Patteo Olinda',
+    school: 'Projeto Ponte Saber · GRE Metropolitana Norte',
     instructor: {
       name: 'Equipe do Projeto Ponte Saber',
       role: 'Oficineiros',
-      institution: 'UNINASSAU Patteo Olinda',
-      bio: 'Equipe do projeto Ponte Saber, do UNINASSAU Patteo Olinda, responsável pela oficina.',
+      institution: 'GRE Metropolitana Norte',
+      bio: 'Equipe do projeto Ponte Saber, da GRE Metropolitana Norte, responsável pela oficina.',
     },
     materialsProvided: ['Computadores com acesso à internet'],
     equipment: ['Projetor ou tela para apresentação'],
