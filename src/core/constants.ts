@@ -830,21 +830,33 @@ export const WORKSHOPS_DATA: Workshop[] = [
     id: 'protecao-de-dados-em-jogos',
     title: 'Proteção de dados em jogos: Até onde você iria por cliques?',
     description:
-      'Oficina em formato de jogo sobre privacidade digital: a cada clique, os participantes descobrem quem coleta seus dados, como eles são usados e como se proteger.',
+      'Oficina de educação midiática e proteção de dados com o jogo "O Editorial da Mentira": no papel de editores, os participantes criam manchetes falsas, sentem as consequências e aprendem a identificar fake news, deepfakes e golpes digitais.',
     schedule: `${EVENT_DATE.dayMonthLong} · ${PROGRAM_TIMES.workshops.range}`,
     room: 'Salas de oficina · ETE José de Alencar',
     targetAudience:
-      'Estudantes da rede estadual interessados em jogos, tecnologia e privacidade digital.',
-    school: 'GRE Metropolitana Norte',
+      'Estudantes e professores da rede estadual interessados em educação midiática, jogos digitais e privacidade.',
+    school: 'UNINASSAU Olinda',
     instructor: {
-      name: 'Equipe GRE Metropolitana Norte',
+      name: 'Equipe UNINASSAU Olinda',
       role: 'Oficineiros',
-      institution: 'GRE Metropolitana Norte',
-      bio: 'Equipe da GRE Metropolitana Norte responsável pela oficina.',
+      institution: 'UNINASSAU Olinda',
+      bio: 'Equipe de estudantes de Análise e Desenvolvimento de Sistemas da UNINASSAU Olinda, criadora do jogo autoral "O Editorial da Mentira", usado na oficina para ensinar a identificar desinformação.',
     },
-    materialsProvided: ['Computadores com acesso à internet'],
-    equipment: ['Projetor ou tela para apresentação'],
-    software: 'Navegador de internet',
+    materialsProvided: [
+      'Jogo digital "O Editorial da Mentira" (HTML5, CSS3 e JavaScript)',
+      'Apresentação em slides',
+      'QR Code para o questionário de avaliação',
+    ],
+    equipment: [
+      'Projetor multimídia',
+      'Notebook',
+      'Caixa de som',
+      'Tomadas próximas à mesa',
+      'Internet Wi-Fi',
+    ],
+    prerequisites:
+      'Cada participante precisa de celular ou notebook com acesso à internet para jogar e responder ao questionário.',
+    software: 'Google Chrome, PowerPoint ou Google Apresentações e Google Forms',
   },
 ].map((workshop) => ({
   ...workshop,
