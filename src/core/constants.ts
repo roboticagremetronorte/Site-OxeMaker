@@ -672,9 +672,9 @@ export const WORKSHOPS_DATA: Workshop[] = [
     room: 'Salas de oficina · ETE José de Alencar',
     targetAudience: 'Estudantes e professores da rede estadual.',
     instructor: {
-      name: 'João Paulo Cerquinho Cajueiro',
+      name: 'Thalys Brito',
       role: 'Oficineiro',
-      institution: 'DEMEC/UFPE',
+      institution: 'MARACATRONICS',
       bio: 'Responsável pela oficina.',
     },
     materialsProvided: [
@@ -691,7 +691,7 @@ export const WORKSHOPS_DATA: Workshop[] = [
   },
   {
     id: 'recomposicao-aprendizagem-diagnosticos',
-    title: 'Recomposição da Aprendizagem: como transformar diagnósticos em decisões pedagógicas',
+    title: 'Conectando Dados e Saberes: Tecnologia a Serviço da Recomposição da Aprendizagem',
     description:
       'Oficina para gestores escolares sobre como usar evidências de aprendizagem para identificar lacunas e orientar ações de recomposição, conectando diagnósticos à tomada de decisão pedagógica.',
     schedule: `${EVENT_DATE.dayMonthLong} · ${PROGRAM_TIMES.workshops.range}`,
